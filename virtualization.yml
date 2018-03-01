@@ -1,0 +1,9 @@
+---
+- hosts: control
+  become: true
+  gather_facts: false
+  roles:
+    - control
+    - kvm_image
+    - kvm_image_deploy
+    - cloud_init
